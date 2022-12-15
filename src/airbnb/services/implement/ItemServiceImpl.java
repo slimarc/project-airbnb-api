@@ -119,7 +119,7 @@ public class ItemServiceImpl implements IItemService{
     }
 
     @Override
-    public AcomodacaoResponse updateAcomodacao(AcomodacaoResponse acomodacaoRequest, int id_acomodacao) {
+    public AcomodacaoResponse updateAcomodacao(AcomodacaoRequest acomodacaoRequest, int id_acomodacao) {
         Acomodacao acomodacaoUpdated = this.findAcomodacaoId(id_acomodacao);
         acomodacaoUpdated.setValor_diaria(acomodacaoRequest.getValor_diaria());
         acomodacaoUpdated.setMax_pessoas(acomodacaoRequest.getMax_pessoas());
@@ -132,7 +132,7 @@ public class ItemServiceImpl implements IItemService{
     }
 
     @Override
-    public ExperienciaResponse updateExperiencia(ExperienciaResponse experienciaRequest, int id_experiencia) {
+    public ExperienciaResponse updateExperiencia(ExperienciaRequest experienciaRequest, int id_experiencia) {
         Experiencia experienciaUpdated = this.findExperienciaId(id_experiencia);
         experienciaUpdated.setValor_diaria(experienciaRequest.getValor_diaria());
         experienciaUpdated.setMax_pessoas(experienciaRequest.getMax_pessoas());
@@ -145,7 +145,7 @@ public class ItemServiceImpl implements IItemService{
     }
 
     @Override
-    public AventuraResponse updateAventura(AventuraResponse aventuraRequest, int id_aventura) {
+    public AventuraResponse updateAventura(AventuraRequest aventuraRequest, int id_aventura) {
         Aventura aventuraUpdated = this.findAventuraId(id_aventura);
         aventuraUpdated.setValor_diaria(aventuraRequest.getValor_diaria());
         aventuraUpdated.setMax_pessoas(aventuraRequest.getMax_pessoas());

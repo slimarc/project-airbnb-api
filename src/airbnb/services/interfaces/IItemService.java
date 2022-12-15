@@ -19,20 +19,19 @@ public interface IItemService {
     List<Item> filterEndereco(Endereco endereco);
 
     AcomodacaoResponse createAcomodacao(AcomodacaoRequest acomodacaoRequest);
-    AcomodacaoResponse updateAcomodacao(AcomodacaoResponse acomodacaoRequest, int id_acomodacao);
+    AcomodacaoResponse updateAcomodacao(AcomodacaoRequest acomodacaoRequest, int id_acomodacao);
     Acomodacao findAcomodacaoId(int id_acomodacao);
 
     ExperienciaResponse createExperiencia(ExperienciaRequest experienciaRequest);
-    ExperienciaResponse updateExperiencia(ExperienciaResponse experienciaRequest, int id_experiencia);
+    ExperienciaResponse updateExperiencia(ExperienciaRequest experienciaRequest, int id_experiencia);
     Experiencia findExperienciaId(int id_experiencia);
 
     AventuraResponse createAventura(AventuraRequest aventuraRequest);
-    AventuraResponse updateAventura(AventuraResponse aventuraRequest, int id_aventura);
+    AventuraResponse updateAventura(AventuraRequest aventuraRequest, int id_aventura);
     Aventura findAventuraId(int id_aventura);
 
     void checkItem(Item item);
     void checkNoItem(Item item);
 
     void deleteItem(int id_item);
-    
 }

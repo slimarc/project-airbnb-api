@@ -38,5 +38,5 @@ public class Acomodacao extends Item{
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
-
+    
 }

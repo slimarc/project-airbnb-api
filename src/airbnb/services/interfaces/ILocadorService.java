@@ -1,8 +1,5 @@
 package airbnb.services.interfaces;
 
-
-public interface ILocadorService {
+public interface ILocadorService extends IItemService{
     
-    
-    void deletarItem(int id);
 }

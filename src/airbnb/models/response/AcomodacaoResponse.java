@@ -10,6 +10,7 @@ public class AcomodacaoResponse {
     private Endereco endereco;
     private Locador locador;
     private String descricao;
+    private boolean disponivel;
     
     public AcomodacaoResponse(int id_item, double valor_diaria, int max_pessoas, Endereco endereco, Locador locador,
             String descricao) {
@@ -68,6 +69,15 @@ public class AcomodacaoResponse {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
-       
+
+    public boolean isDisponivel() {
+        return disponivel;
+    }
+
+    public void setDisponivel(boolean disponivel) {
+        this.disponivel = disponivel;
+    }
+    
+    
     
 }
